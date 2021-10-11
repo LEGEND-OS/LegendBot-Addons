@@ -522,8 +522,8 @@ async def bluedevildog(dog):
     await edit_or_reply(dog, J)
 
 
-@bot.on(admin_cmd(pattern=r"^hello$"))
-@bot.on(sudo_cmd(pattern="^hello$", allow_sudo=True))
+@bot.on(admin_cmd(pattern=r"^Hello$"))
+@bot.on(sudo_cmd(pattern="^Hello$", allow_sudo=True))
 async def bluedevilhello(hello):
     if hello.fwd_from:
         return
@@ -613,7 +613,7 @@ CmdHelp("arts").add_command(
 ).add_command(
   'dog', None, 'Use and see'
 ).add_command(
-  'hello', None, 'Use and see'
+  '^Hello', None, 'Use and see'
 ).add_command(
   'hmf', None, 'Use and see'
 ).add_command(
