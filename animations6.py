@@ -277,7 +277,7 @@ async def _(event):
         await event.edit(animation_chars[i%192])
         
         
-@borg.on(admin_cmd(pattern=r"^tlol"))
+@borg.on(admin_cmd(pattern=r"^Tlol"))
 async def _(event):
     if event.fwd_from:
         return
@@ -287,7 +287,7 @@ async def _(event):
         await event.edit("".join(deq))
         deq.rotate(1)
     
-@borg.on(admin_cmd(pattern=r"^lol"))
+@borg.on(admin_cmd(pattern=r"^Lol"))
 async def _(event):
     if event.fwd_from:
         return
@@ -415,9 +415,9 @@ CmdHelp("animations6").add_command(
 ).add_command(
   'birthday', None, 'Use And See'
 ).add_command(
-  'lol', None, 'Use and See'
+  '^Lol', None, 'Use and See'
 ).add_command(
-  'tlol', None, 'Use and See'
+  '^Tlol', None, 'Use and See'
 ).add_command(
   'chutiye', None, 'Animation Abuse'
 ).add_type(
