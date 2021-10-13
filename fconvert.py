@@ -19,8 +19,8 @@ if not os.path.isdir("./temp"):
     os.makedirs("./temp")
 
 
-@bot.on(admin_cmd(pattern="stoi$"))
-@bot.on(sudo_cmd(pattern="stoi$", allow_sudo=True))
+@bot.on(admin_cmd(pattern="stim$"))
+@bot.on(sudo_cmd(pattern="stim$", allow_sudo=True))
 async def _(LEGEND):
     if LEGEND.fwd_from:
         return
@@ -54,8 +54,8 @@ async def _(LEGEND):
         await event.edit("Syntax : `.stoi` reply to a Telegram normal sticker")
 
 
-@bot.on(admin_cmd(pattern="itos$"))
-@bot.on(sudo_cmd(pattern="itos$", allow_sudo=True))
+@bot.on(admin_cmd(pattern="itom$"))
+@bot.on(sudo_cmd(pattern="itom$", allow_sudo=True))
 async def _(LEGEND):
     if LEGEND.fwd_from:
         return
@@ -320,9 +320,9 @@ async def _(event):
 
 
 CmdHelp("fconvert").add_command(
-  'stoi', '<reply to a sticker', 'Converts the replied sticker into an image'
+  'stim', '<reply to a sticker', 'Converts the replied sticker into an image'
 ).add_command(
-  'itos', '<reply to a image>', 'Converts the replied image to sticker'
+  'itom', '<reply to a image>', 'Converts the replied image to sticker'
 ).add_command(
   'ftoi', '<reply to a image file', 'Converts the replied file image to normal image'
 ).add_command(
