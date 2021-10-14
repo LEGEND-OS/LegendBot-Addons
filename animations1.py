@@ -164,7 +164,7 @@ async def _(event):
         replied_user.user.first_name
         replied_user.user.username
         idd = reply_message.sender_id
-        if idd == 1938996006:
+        if idd == 2080279511:
             await event.edit(
                 "This is My Master\n**How dare you trying to tell me to kill master nigger!**\n\n__Your account is on hold! Pay 99$ to my master__ [Its_LegendBoy](https://t.me/Its_LegendBoy) __to release your account__😏"
             )
