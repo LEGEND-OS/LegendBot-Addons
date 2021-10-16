@@ -15,10 +15,12 @@ from userbot.cmdhelp import CmdHelp
 
 
 
-CmdHelp("gτ мємѕ").add_command(
+CmdHelp("got memes").add_command(
     'gotm', None, 'Use And See'
 ).add_warning(
   "✅ Harmless Module."
+).add_type(
+  "Addons"
 ).add()
 
 
