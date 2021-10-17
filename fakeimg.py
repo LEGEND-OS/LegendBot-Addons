@@ -22,3 +22,8 @@ async def _(event):
     await borg.send_file(event.chat_id, fole, caption=captin)
     await event.delete()
     os.system("rm /root/userbot/LEGENDBOT.jpg ")
+    
+    
+CmdHelp("fakeimg").add_command(
+    "picgen", None, "Fake Pic Generation"
+).add()
