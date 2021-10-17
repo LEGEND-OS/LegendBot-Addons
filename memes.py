@@ -619,12 +619,6 @@ async def vapor(vpr):
         await edit_or_reply(vpr, "".join(reply_text))
 
 
-@bot.on(admin_cmd(pattern=f"repo", outgoing=True))
-@bot.on(sudo_cmd(pattern=f"repo", allow_sudo=True))
-async def source(e):
-    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await edit_or_reply(e, "Click [here](https://github.com/LEGEND-OS/LEGENDBOT) to open this 🔥**Lit AF!!**🔥 __LEGENDBOT__ Repo.. Join channel :- @Legend_Userbot")
-
 
 @bot.on(admin_cmd(pattern="str(?: |$)(.*)", outgoing=True))
 @bot.on(sudo_cmd(pattern="str(?: |$)(.*)", allow_sudo=True))
