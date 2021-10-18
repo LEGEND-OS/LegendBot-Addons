@@ -212,4 +212,6 @@ CmdHelp("noice").add_command(
   "nopee", None, "Use and see"
 ).add_command(
   "Okk", None, "Ohh Ok"
+).add_type(
+  "Adons"
 ).add()
