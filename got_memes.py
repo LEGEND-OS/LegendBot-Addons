@@ -18,9 +18,9 @@ from userbot.cmdhelp import CmdHelp
 CmdHelp("got memes").add_command(
     'gotm', None, 'Use And See'
 ).add_warning(
-  "✅ Harmless Module."
+    '✅ Harmless Module.'
 ).add_type(
-  "Addons"
+    'Addons'
 ).add()
 
 
